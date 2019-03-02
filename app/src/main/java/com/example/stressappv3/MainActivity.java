@@ -1,5 +1,9 @@
 package com.example.stressappv3;
 
+import android.Manifest;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothManager;
+import android.content.Context;
 import android.content.Intent;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -11,6 +15,8 @@ import com.parse.ParseQuery;
 import com.parse.SaveCallback;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -41,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         createAccountButton = findViewById(R.id.create_account_button);
         usernameText = findViewById(R.id.usernameEditText);
         passwordText = findViewById(R.id.passwordEditText);
+
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

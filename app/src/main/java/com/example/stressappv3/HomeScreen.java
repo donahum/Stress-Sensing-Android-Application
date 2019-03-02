@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.se.omapi.Session;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -40,7 +41,9 @@ public class HomeScreen extends AppCompatActivity {
         beginSessionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent goToSessionScreen = new Intent(HomeScreen.this, SessionActivity.class);
+                goToSessionScreen.putExtra("username", username);
+                startActivity(goToSessionScreen);
             }
         });
 
@@ -56,7 +59,9 @@ public class HomeScreen extends AppCompatActivity {
         dataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent goToDataScreen = new Intent(HomeScreen.this, ChooseSensorActivity.class);
+                goToDataScreen.putExtra("username", username);
+                startActivity(goToDataScreen);
             }
         });
 
