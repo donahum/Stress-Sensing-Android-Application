@@ -92,4 +92,16 @@
         <item>Body Temperature</item>
         <item>Electromyography (EMG)</item>
     </string-array>
+    <string name="connected"
+        >CONNECTED</string>
+    <string name="disconnected"
+        >DISCONNECTED</string>
+    <string name="service_UUID"
+        >6E400001-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="characteristic_tx_UUID"
+        >6E400003-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="characteristic_rx_UUID"
+        >6E400002-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="mac_address"
+        >30:AE:A4:CB:AF:1A</string>
 </resources>
